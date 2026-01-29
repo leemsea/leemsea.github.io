@@ -1,13 +1,17 @@
-$dark-background-color: #0e0e0e !default;
-$dark-text-color: #b0b0b0 !default;
+// Pink Dreams Theme (Dark Mode)
+$dark-background-color: #2D1B2E !default;
+$dark-text-color: #F5D7E4 !default;
+$dark-accent-color: #FF91C1 !default;
+$dark-border-color: #5A3D5C !default;
+$dark-code-bg: #3F2A40 !default;
 
-html[data-theme="dark"]  {
+html[data-theme="dark"] {
   &[data-scroll-status='top'] {
     header.site-header-transparent {
       &.site-header {
         @include media-query($on-laptop) {
           .page-link {
-            color: #f8f8f8;
+            color: #FFD9EC;
           }
         }
       }
@@ -15,7 +19,7 @@ html[data-theme="dark"]  {
 
     footer.site-footer {
       .site-footer-inner {
-        border-top: solid 1px #2f2f2f !important;
+        border-top: solid 1px #5A3D5C !important;
         transition: 0s;
       }
     }
@@ -26,75 +30,78 @@ html[data-theme="dark"]  {
     background-color: $dark-background-color;
   }
 
-  *:not(pre) > code {
+  *:not(pre)>code {
     color: $dark-text-color;
-    background-color: #454545;
+    background-color: $dark-code-bg;
   }
 
   blockquote {
-    border-left: 4px solid #484848;
+    border-left: 4px solid $dark-accent-color;
   }
 
   table {
     color: #9d9d9d;
 
     th {
-      background-color: #050505;
+      background-color: #3F2A40;
     }
 
     tr:nth-child(even) {
-      background-color: #080808;
+      background-color: #362636;
     }
   }
 
   .site-header {
-    background-color: #090909;
+    background-color: #3D2940;
 
     .site-brand {
       .site-brand-inner {
-        &, &:visited {
-          color: #f8f8f8;
+
+        &,
+        &:visited {
+          color: #FFD9EC;
         }
       }
     }
 
     .site-nav .page-link {
-      color: #f8f8f8;
+      color: #FFD9EC;
     }
 
     .ct-language-dropdown {
-      color: #f8f8f8;
+      color: #FFD9EC;
       background-color: $dark-background-color;
       box-shadow: 0 0 3px 1px #0000005b;
     }
 
-    .ct-language-selected, .ct-language-dropdown li:hover {
-      background-color: #222 !important;
+    .ct-language-selected,
+    .ct-language-dropdown li:hover {
+      background-color: #4D3A52 !important;
     }
 
     @include media-query($on-laptop) {
-      .menu-icon > svg {
-          fill: rgba($dark-text-color, 80%);
+      .menu-icon>svg {
+        fill: rgba($dark-text-color, 80%);
       }
 
-      .site-nav input:checked ~ .trigger {
-        background-color: #090909;
+      .site-nav input:checked~.trigger {
+        background-color: #3D2940;
       }
     }
   }
 
   .site-footer {
-    color: #fff;
-    background-color: #000;
+    color: #FFD9EC;
+    background-color: #1F141F;
   }
 
   .left-vsplit:before {
-    background-color: #505050;
+    background-color: $dark-border-color;
   }
 
   .page-banner {
     .page-banner-img {
-      & > *:first-child {
+      &>*:first-child {
         opacity: 0.718;
       }
     }
@@ -110,27 +117,27 @@ html[data-theme="dark"]  {
     }
 
     .post-list {
-      & > li:not(:last-child) {
-        border-bottom: 1px solid #545454;
+      &>li:not(:last-child) {
+        border-bottom: 1px solid $dark-border-color;
       }
     }
 
     .post-tags .post-tag:hover {
-      color: #d7d7d7;
+      color: $dark-accent-color;
     }
   }
 
   .page-segments {
     li {
       a {
-        color: #ddd;
+        color: #FFD9EC;
       }
     }
   }
 
   .post {
     .post-header {
-      border-bottom: 1px solid #555;
+      border-bottom: 1px solid $dark-border-color;
     }
 
     .post-content {
@@ -139,51 +146,51 @@ html[data-theme="dark"]  {
       }
 
       hr {
-        background-color: #555;
+        background-color: $dark-border-color;
       }
     }
 
     .post-related {
-      & > *:first-child {
-        color: #d7d7d7;
+      &>*:first-child {
+        color: #FFD9EC;
       }
 
       a:hover {
-        color: #aaa;
+        color: $dark-accent-color;
       }
     }
   }
 
   .common-list {
     li {
-      border-bottom: solid 1px #40404088;
+      border-bottom: solid 1px #5A3D5C88;
 
       a {
-        color: #aaa;
+        color: #F5D7E4;
       }
 
       a:hover {
-        background-color: #272727;
+        background-color: #4D3A52;
       }
 
       span {
-        background-color: #333;
+        background-color: #4D3A52;
       }
     }
   }
 
   .post-menu {
     .post-menu-title {
-      color: #ddd;
+      color: #FFD9EC;
     }
 
     .post-menu-content {
       ul {
-        border-left: 1px solid #787878;
+        border-left: 1px solid $dark-border-color;
 
         .active {
-          background-color: #2d2d2d;
-          border-left: 2px solid #aaa;
+          background-color: #4D3A52;
+          border-left: 2px solid $dark-accent-color;
         }
 
         a {
@@ -191,7 +198,7 @@ html[data-theme="dark"]  {
         }
 
         a:hover {
-          color: #fff !important;
+          color: #FFD9EC !important;
         }
       }
     }
@@ -206,4 +213,3 @@ html[data-theme="dark"]  {
     background-color: $dark-background-color;
   }
 }
-

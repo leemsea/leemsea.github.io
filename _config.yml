@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Musèum
 email: your-email@domain.com
-author: GitHub User
+author: leemsea
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -48,8 +48,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "" # the favicon for your site
+url: "https://leemsea.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+favicon: "/assets/images/favicon.ico" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -108,7 +108,8 @@ yat:
 # spacegrey: #353535
 # snowwhite: #ffffff
 #
-# theme_color: snowwhite
+# Pink Princess Theme
+theme_color: "#FFFBFC"
 #
 # Custom color as below:
 # theme_color: "#882250"
@@ -119,15 +120,16 @@ yat:
 # greatgold: #f2cb05
 # greenblue: #389092
 #
-# brand_color: orangered
+# Pink Princess Theme
+brand_color: "#FFB3D9"
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
 
 # You can custom selection style
-# selection:
-#   color: "#ff00ff"
-#   background_color: "yellow"
+selection:
+  color: "#FFFFFF"
+  background_color: "#FFB3D9"
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
@@ -140,7 +142,7 @@ yat:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+night_mode: "auto"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -160,27 +162,27 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "Musèum"
+    subheading: "I'll share those things that we might remember .✦ ݁˖"
+    banner: "/assets/images/pixel_rabbit_banner.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
 # config it by the front matter for one specific post
-# banner:
-#   video: null             # Video banner source
-#   loop: true              # Video loop
-#   volume: 0               # Video volume (100% is 1.0)
-#   start_at: 0             # Video start time
-#   image: null             # Image banner source
-#   opacity: 1.0            # Banner opacity (100% is 1.0)
-#   background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
-#   height: "640px"         # Banner default height
-#   min_height: null        # Banner minimum height
-#   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
-#   subheading_style: null  # Custom subheading style (e.g. color: gold)
+banner:
+  video: null             # Video banner source
+  loop: true              # Video loop
+  volume: 0               # Video volume (100% is 1.0)
+  start_at: 0             # Video start time
+  image: null             # Image banner source
+  opacity: 1.0            # Banner opacity (100% is 1.0)
+  background: "rgba(0, 0, 0, 0.4)"  # Banner background - 어두운 오버레이로 글씨 선명하게
+  height: "640px"         # Banner default height
+  min_height: null        # Banner minimum height
+  heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
+  subheading_style: null  # Custom subheading style (e.g. color: gold)
 
 # Excerpt settings
 # excerpt:

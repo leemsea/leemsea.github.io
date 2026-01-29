@@ -1,0 +1,62 @@
+// Custom CSS for Blog Title Font
+
+.site-brand .site-brand-inner {
+    font-family: 'Cafe24Meongi', cursive !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #D89CAD !important; // Softer pink for better harmony
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8),
+        -1px -1px 3px rgba(255, 255, 255, 0.8),
+        1px -1px 3px rgba(255, 255, 255, 0.8),
+        -1px 1px 3px rgba(255, 255, 255, 0.8); // White glow effect
+}
+
+// Also apply to header when scrolled
+html[data-scroll-status='down'] .site-brand .site-brand-inner,
+.site-header .site-brand .site-brand-inner {
+    color: #D89CAD !important;
+}
+
+// Apply Cafe24 Meongi font to banner heading
+.page-banner .page-banner-inner>*:first-child> :nth-child(1) {
+    font-family: 'Cafe24Meongi', cursive !important;
+    color: #A5C2B3 !important; // Mint green matching strawberry stems
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8),
+        -1px -1px 3px rgba(255, 255, 255, 0.8),
+        1px -1px 3px rgba(255, 255, 255, 0.8),
+        -1px 1px 3px rgba(255, 255, 255, 0.8) !important; // Same white glow as logo
+}
+
+// Style navigation menu links (right side)
+.site-nav .page-link {
+    color: #D89CAD !important; // Same rose pink
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9),
+        -1px -1px 2px rgba(255, 255, 255, 0.9) !important; // White glow for visibility
+    font-weight: 700; // Bold for better visibility
+}
+
+// Banner subheading - rose pink background with white text
+// Banner subheading - rose pink background with white text
+.page-banner .page-banner-inner .page-banner-subheading {
+    color: #FFFFFF !important; // White text
+    background-color: rgba(216, 156, 173, 0.85); // Rose pink background
+    padding: 4px 10px; // Padding adjusted for smaller font
+    border-radius: 3px; // More square (was 6px)
+    display: inline-block;
+    text-shadow: none !important;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.1rem; // Smaller (was 1.25rem)
+    letter-spacing: 0.5px;
+}
+
+// Custom Text Selection Color (Mint Green)
+::selection {
+    background: #A5C2B3 !important;
+    color: #FFFFFF !important;
+}
+
+::-moz-selection {
+    background: #A5C2B3 !important;
+    color: #FFFFFF !important;
+}
