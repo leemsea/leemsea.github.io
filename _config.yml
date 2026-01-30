@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Muséum
+title: Musèum
 email: your-email@domain.com
 author: leemsea
 
@@ -164,7 +164,7 @@ night_mode: "off"
 # Page default value
 defaults:
   home:
-    heading: "Muséum"
+    heading: "Musèum"
     subheading: "I'll share those things that we might remember .✦ ݁˖"
     banner: "/assets/images/pixel_rabbit_banner.jpg"
 
